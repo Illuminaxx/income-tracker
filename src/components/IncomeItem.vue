@@ -1,11 +1,11 @@
 <template>
   <div class="income-item">
-    <div class="removeItem" @click="removeItem">x</div>
+    <div class="removeItem" @click="removeItem">X</div>
     <div class="desc">
       {{ income.desc }}
     </div>
     <div class="price">
-      €{{ income.value }}
+      € {{ income.value }}
     </div>
     <div class="date">
       {{ formattedDate }}

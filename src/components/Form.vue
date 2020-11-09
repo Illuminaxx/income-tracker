@@ -1,9 +1,25 @@
 <template>
   <form @submit.prevent="FormHandler">
-    <input type="text" placeholder="Income Description..." v-model="formData.desc" />
-    <input type="number" placeholder="Income Value..." v-model="formData.value" />
-    <input type="date" placeholder="Income Date..." v-model="formData.date" />
-    <input type="submit" value="SUBMIT" />
+    <div class="field">
+      <div class="control">
+        <input type="text" class="input" placeholder="Revenu description..." v-model="formData.desc" />
+      </div>
+    </div>
+    <div class="field">
+      <div class="control">
+        <input type="number" class="input" placeholder="Valeur revenu..." v-model="formData.value" />
+      </div>
+    </div>
+    <div class="field">
+      <div class="control">
+        <input type="date"  class="input" placeholder="Date..." v-model="formData.date" />
+      </div>
+    </div>
+    <div class="field">
+      <div class="control">
+        <button class="button is-primary is-medium">Valider</button>
+      </div>
+    </div>
   </form>
 </template>
 
@@ -54,6 +70,7 @@ export default {
     border: none;
     outline: none;
     font-size: 20px;
+   
   }
 
   form input::placeholder {
@@ -83,11 +100,17 @@ export default {
     cursor: pointer;
   }
 
+  .control {
+     margin: 0 .7em 0 0;
+  }
+
   form input:first-of-type {
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 8px 8px 8px 8px;
+    
   }
 
   form input:last-of-type {
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 8px 8px 8px 8px;
+    
   }
 </style>

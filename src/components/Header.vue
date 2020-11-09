@@ -1,7 +1,7 @@
 <template>
   <header>
-    <h1>Income Tracker</h1>
-    <div class="total-income">€{{ totalIncome }}</div>
+    <h1>Suivi des revenus</h1>
+    <div class="total-income">€ {{ totalIncome }}</div>
   </header>
 </template>
 
